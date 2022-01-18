@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styleformular.css">
+<title>Kontaktformular</title>
+<script defer src="validation.js"></script>
+<script defer src="code.js"></script>
+</head>
+<body>
+	<div id="error"></div>
+	<form id="form" action="/" method="GET" name="contact-form">
+		
+	<fieldset>
+	<legend> Bitte füllen Sie alle mit * gekennzeichenten Felder wahrheitsgetreu aus</legend>
+	<label for="anrede">Anrede*</label>
+	<select id="anrede">
+	<option>Herr</option>
+	<option>Frau</option>
+	</select>
+	<div class="form-control">
+	<label for="vorname">Vorname*</label>
+	<input name="name" size="20" placeholder="Max">
+	<div class="error hide">Bitte geben Sie Ihren Vornamen an.</div>
+	</div>
+
+	<div class="form-control">
+	<label for="secondname">Nachname*</label>
+	<input name="secondname" size="20" placeholder="Mustermann">
+	<div class="error hide">Bitte geben Sie Ihren Nachnamen an.</div>
+	</div>
+
+	<div class="form-control">
+	<label for="email">E-Mail*</label>
+	<input name="email" size="20" placeholder="max.mustermann@example.com">
+	<div class="error hide">Bitte geben Sie Ihre Email-Adresse an.</div>
+	</div>
+
+	<div class="form-control">
+	<label for="title">Titel der Anfrage</label>
+	<input name="title" size="20" placeholder="Ihr Anliegen">
+	</div>
+
+	<div class="form-control">	
+	<label for="message">Ihr Anliegen*</label>
+	<textarea name="message" cols="50" rows="10" placeholder="Ich möchte Sie aufgrund des folgenden Anliegens kontakieren ..."></textarea>
+	<div class="error hide" id="einzug">Bitte teilen Sie mir Ihr Anliegen mit.</div>
+	</div>
+
+	<div class="form-control">
+	<label for="mobile">Mobile*</label>
+	<input name="phone" size="20" placeholder="041 78 748 64 76">
+	<div class="error hide">Bitte geben Sie Ihre Mobiltelefonnummer an.</div>
+	</div>
+
+	<div class="form-control">
+	<label for="festnetz">Festnetz</label>
+	<input name="festnetz" size="20" placeholder="041 57 89 306">
+	</div>
+
+	<div class="form-control">
+	<label for="strasse">Strasse</label>
+	<input name="strasse" size="20" placeholder="Beispielweg 28c">
+	</div>
+
+	<div class="form-control">
+	<label for="plz">PLZ</label>
+	<input name="plz" size="20" placeholder="7554 Beispielhausen">
+	</div>	
+
+	<label for="land">Land</label>
+	<select id="land">
+	<option>Schweiz</option>
+	<option>Deutschland</option>
+	<option>Österreich</option>
+	</select>
+	
+	</fieldset>
+	
+	<button id="submit" type="submit">Eingaben Prüfen</button>
+	<button id="verify" type="submit" onclick="abgesendet()">Absenden</button>
+	
+
+	</form>
+	<button onclick="window.location.href = 'about.html';">Zurück zur Homepage</button>
+</body>
+</html>
