@@ -3,11 +3,24 @@
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" href="styleformular.css">
+<link rel="stylesheet" href="stylesheet.css">
 <title>Kontaktformular</title>
 <script defer src="validation.js"></script>
 <script defer src="code.js"></script>
 </head>
 <body>
+
+<header>
+	<h1 class="Titel">KONTAKT</h1>
+
+	<!--Navigation-->
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+		<li><a class="active" href="about.html">About</a></li>
+	</ul>
+</header>
+
 	<div id="error"></div>
 	<form id="form" action="/" method="GET" name="contact-form">
 		
@@ -83,5 +96,16 @@
 
 	</form>
 	<button onclick="window.location.href = 'about.html';">Zurück zur Homepage</button>
+
+	<!--footer-->
+	<div class="bg_footer">
+		<div class="bg_footer">
+			<p class="footer"><br>
+				<a href="https://www.instagram.com/jess_lawliet/" target="_blank"><img src="images/insta_logo.png" alt="Instagram Logo"/></a> <a href="https://twitter.com/jess_lawliet_" target="_blank"><img src="images/twitter_logo.png" alt="Twitter Logo"/></a></p>
+			<p class="c">2021 - Jessica Bauer ©</p>
+			<a href="gallery.html"><button type="button" class="btn btn-outline-light top">Back to top! <img class="btt" src="images/schwibbel.gif" alt="Animation von einem laufenden Wesen"></button></a>
+		</div>
+	</div>
+
 </body>
 </html>
