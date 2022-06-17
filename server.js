@@ -44,9 +44,11 @@ app.post('/register', (req, res) => {
 
     let userObj = {
         "id": uuidv4(),
-        "username": req.body.user.username,
+        "name": req.body.user.name,
+        "secondname": req.body.user.secondname,
         "email": req.body.user.email,
-        "password": req.body.user.password
+        "message": req.body.user.message,
+        "phone": req.body.user.phone,
     }
 
     let result = Validation.validateUser(userObj);
