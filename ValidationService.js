@@ -5,6 +5,13 @@ const validation = require('./validation.js');
  * @param userObj
  * @returns {boolean|{msg: string, isNotValid: boolean}|{isNotValid}|*}
  */
+
+
+
+
+
+
+
 function validateUser(userObj) {
  
     let result = validation.isValidEmail("email", userObj.email);
@@ -24,6 +31,21 @@ function validateUser(userObj) {
 
     return false;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**
  *  Export validation functions for further usage.

@@ -1,25 +1,26 @@
 {
-    "name": "LB02_ME20D",
+    "name": "M307_MED19",
     "version": "1.0.0",
-    "description": "IT-Modul-307",
+    "description": "ICT-Modul_307",
     "main": "server.js",
     "scripts": {
-    "registrationserver": "node server.js"
+            "registrationserver": "node server.js"
     },
 
-    "keywords": [ 
-        "M307_MED20",
-        "Project",
-        "Javascript"
+    "keywords": [
+      "Mediamatiker",
+      "m307",
+      "ICT",
+      "javascript"
     ],
-
     "author": "chiarandaa@bzz.ch",
     "license": "ISC",
     "dependencies": {
-    "esm": "^3.2.25",
-    "multer": "^1.4.2",
-    "express": "^4.17.1",
-    "body-parser": "^1.19.0",
-    "uuid": "^8.3.1"
+      "esm": "^3.2.25",
+      "express": "^4.17.1",
+      "multer": "^1.4.2",
+      "body-parser": "^1.19.0",
+      "nodemon": "^2.0.15",
+      "uuid": "^8.3.1"
     }
-}
+  }
